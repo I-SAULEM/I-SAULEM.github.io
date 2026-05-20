@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -33,7 +32,7 @@ form input, form select { width:100%; padding:12px; margin:10px 0; border-radius
 form select { background:#fff; }
 form button { width:100%; margin-top:10px; }
 
-/* Модальное окно преподавателей */
+
 #teachersModal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,51,42,0.7); justify-content:center; align-items:center; z-index:1000; }
 .modal-content { background:#fefcf6; border: 4px solid #d4af37; border-radius:25px; max-width:1000px; width:90%; max-height:85%; overflow-y:auto; padding:30px; position:relative; font-family:'Luckiest Guy', cursive; }
 #closeModal { position:absolute; top:15px; right:15px; background:#00332a; border:2px solid #d4af37; color:#fff; font-size:16px; padding:5px 10px; border-radius:12px; cursor:pointer; }
@@ -50,7 +49,7 @@ form button { width:100%; margin-top:10px; }
 .teacher-card .emoji { position:absolute; font-size:18px; animation-name:floatAround; animation-iteration-count:infinite; pointer-events:none; opacity: 0.4; }
 @keyframes floatAround { 0% { transform:translate(0,0) rotate(0deg); } 25% { transform:translate(10px,-10px) rotate(90deg); } 50% { transform:translate(0,-20px) rotate(180deg); } 75% { transform:translate(-10px,-10px) rotate(270deg); } 100% { transform:translate(0,0) rotate(360deg); } }
 
-/* Карусель «О нас» */
+
 .carousel { margin:40px auto; max-width:90%; position:relative; overflow:hidden; border-radius:25px; box-shadow:0 4px 15px rgba(0,0,0,0.15); border: 3px solid #00332a; }
 .carousel-track { display:flex; transition:transform 0.5s ease-in-out; }
 .carousel-slide { min-width: 250px; margin: 0 10px; box-sizing:border-box; }
@@ -65,7 +64,6 @@ form button { width:100%; margin-top:10px; }
 
 <header>
   <h1>I-SAULEM 🌟🎨🧸</h1>
-<h1>АДРЕС:НАЗАРБАЕВА 206🌟✨🌟</h1>
   <a href="#" class="btn" id="openTeachers">Наши преподаватели 🎓</a>
 </header>
 
@@ -172,14 +170,11 @@ form button { width:100%; margin-top:10px; }
   <div class="carousel-track">
     <div class="carousel-slide"><video src="video/ooo1.mp4" controls width="400"></video></div>
     <div class="carousel-slide"><video src="video/ooo2.mp4" controls width="400"></video></div>
-    <div class="carousel-slide"><video src="video/ooo3.mp4" controls width="400"></video></div>
-    <div class="carousel-slide"><video src="video/ooo4.mp4" controls width="400"></video></div>
   </div>
   <button class="carousel-btn prev">&#10094;</button>
   <button class="carousel-btn next">&#10095;</button>
 </div>
 
-<h2>НАШ instagram @isaulem_</h2>
 <h2>Запись на курс 📝</h2>
 <form id="form">
   <input type="text" name="parentName" placeholder="Имя родителя" required>
@@ -265,7 +260,7 @@ form.addEventListener('submit', function(e){
   window.open(url,'_blank');
 });
 
-// Летающие эмодзи на белом фоне
+
 const bgEmojis = ["🌟","🎨","🧸","📚","✨","🖍️","🎈","☁️"];
 const container = document.getElementById('bgEmojisContainer');
 for(let i=0;i<60;i++){
@@ -280,7 +275,7 @@ for(let i=0;i<60;i++){
   container.appendChild(span);
 }
 
-// Карусель
+
 const track = document.querySelector('.carousel-track');
 const slides = Array.from(track.children);
 const nextBtn = document.querySelector('.carousel-btn.next');
@@ -309,3 +304,5 @@ showSlide(currentIndex);
 
 </body>
 </html>
+<h3>НАШ instagram @isaulem_</h3>
+<h3>АДРЕС:НАЗАРБАЕВА 206🌟✨🌟</h3>
